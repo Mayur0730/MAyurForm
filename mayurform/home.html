@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+		
+<div class="ScriptTop">
+    <div class="rt-container">
+        <div class="col-rt-4" id="float-right">
+            <!-- AD -->
+        </div>
+    </div>
+</div>
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>Comment Box</h1>
+                <h2><p>What would you like to share with world? </p></h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+
+<section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+          </div><!--End col -->
+          </div><!-- End row -->
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
+
+<script  src="js/script.js"></script>
+           
+    		</div>
+		</div>
+    </div>
+</section>
+
+     
+
+	</body>
+</html>
